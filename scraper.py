@@ -8,7 +8,7 @@ root = lxml.html.fromstring(html) # turn our HTML into an lxml object
 
 tds = root.cssselect('tr') # get all the <td tags
 
-for td in tds:
+for tr in tds:
   print tr.text_content() # just the text inside the HTML tag
 
 for tr in tds:
